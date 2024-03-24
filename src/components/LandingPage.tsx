@@ -11,8 +11,8 @@ const LandingPage = () => {
           {/* -[200px] md:w-[325px] lg:w-[350px] */}
           <section className="my-10 text-sm md:text-xl w-[100%]">
             <p className="text-center md:text-left">
-              Software Developer From pakistan with good experience in building
-              complex applications in cutting edge technologies
+              Software Developer with good experience in building complex
+              applications in cutting edge technologies
             </p>
           </section>
         </section>
