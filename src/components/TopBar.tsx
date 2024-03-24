@@ -4,6 +4,8 @@ const TopBar = () => {
   const data = [
     { text: "Works", logo: "", to: "/work" },
     { text: "Resume", logo: "", to: "/resume" },
+    { text: "Blog", logo: "", to: "/blog" },
+
     // { text: "Shelf", logo: "" },
   ];
   return (
