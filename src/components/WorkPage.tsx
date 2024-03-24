@@ -7,8 +7,8 @@ const WorkPage = () => {
   const data = [
     { logo: gamehub, href: "https://game-hub-muazzia.vercel.app/" },
     { logo: sounddesign, href: "https://sound-design.vercel.app/" },
-    { logo: social, href: "https://game-hub-muazzia.vercel.app/" },
-    { logo: bank, href: "https://social-blond-seven.vercel.app/" },
+    { logo: social, href: "https://social-blond-seven.vercel.app/home" },
+    { logo: bank, href: "https://bank-website-ebon.vercel.app/" },
   ];
   return (
     <section className="my-5">
