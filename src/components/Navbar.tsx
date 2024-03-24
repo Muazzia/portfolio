@@ -8,7 +8,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { MdEmail } from "react-icons/md";
 import { Button } from "./ui/button";
 import { Link } from "react-router-dom";
-import { FaLinkedin } from "react-icons/fa";
+import { FaInstagram, FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { BsPersonWorkspace } from "react-icons/bs";
@@ -54,7 +54,7 @@ const Navbar = () => {
                 })}
               </div>
             </div>
-            <div className="h-full relative">
+            <div className="h-[90%] relative">
               <div className="absolute bottom-[150px] flex space-x-6 items-center">
                 <a
                   href="https://www.linkedin.com/in/muaz-zia-38928325b/"
@@ -62,6 +62,16 @@ const Navbar = () => {
                   target="_blank"
                 >
                   <FaLinkedin className="group-hover:scale-105" size={"30px"} />
+                </a>
+                <a
+                  href="https://www.instagram.com/muaz_zia17/"
+                  target="_blank"
+                  className="group"
+                >
+                  <FaInstagram
+                    size={"30px"}
+                    className="group-hover:scale-105"
+                  />
                 </a>
                 <a
                   href="https://github.com/muazzia"
