@@ -7,7 +7,7 @@ const LeftBar = () => {
     // h-[20%]
     <div className="h-[300px] md:w-[120px] lg:w-[140px] space-y-5 flex flex-col justify-center items-center text-maingrey">
       <a
-        href="https://www.linkedin.com/in/muaz-zia-38928325b/"
+        href="https://www.linkedin.com/in/muazzia-webdeveloper"
         className="group"
         target="_blank"
       >
