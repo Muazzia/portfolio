@@ -34,7 +34,7 @@ const MainPage = () => {
           </p>
           <div className="mt-4">
             <a
-              href="https://www.instagram.com/muaz.shah16/"
+              href="https://www.instagram.com/muaz_zia17/"
               target="_blank"
               className="group"
             >

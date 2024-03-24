@@ -12,11 +12,13 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { BsPersonWorkspace } from "react-icons/bs";
+import { IoFolderOpenOutline } from "react-icons/io5";
 
 const Navbar = () => {
   const data = [
     { logo: <MdEmail size={"23px"} />, text: "Email", to: "/email" },
     { logo: <MdEmail size={"23px"} />, text: "Resume", to: "/resume" },
+    { logo: <IoFolderOpenOutline size={"23px"} />, text: "Blog", to: "/blog" },
     { logo: <BsPersonWorkspace size={"23px"} />, text: "Works", to: "/work" },
   ];
   return (
