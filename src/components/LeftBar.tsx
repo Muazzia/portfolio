@@ -1,4 +1,4 @@
-import { FaLinkedin } from "react-icons/fa";
+import { FaInstagram, FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 
@@ -12,6 +12,13 @@ const LeftBar = () => {
         target="_blank"
       >
         <FaLinkedin className="group-hover:scale-105" size={"30px"} />
+      </a>
+      <a
+        href="https://www.instagram.com/muaz_zia17/"
+        target="_blank"
+        className="group"
+      >
+        <FaInstagram size={"30px"} className="group-hover:scale-105" />
       </a>
       <a href="https://github.com/muazzia" target="_blank" className="group">
         <FaGithub size={"30px"} className="group-hover:scale-105" />
