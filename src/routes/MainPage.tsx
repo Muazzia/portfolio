@@ -1,4 +1,5 @@
 import BlogsPage from "@/components/BlogsPage";
+import ContactForm from "@/components/ContactForm";
 import LandingPage from "@/components/LandingPage";
 import ResumeBox from "@/components/ResumeBox";
 import SkillsPage from "@/components/SkillsPage";
@@ -25,7 +26,7 @@ const MainPage = () => {
         <WorkPage />
         <BlogsPage />
         <ResumeBox />
-
+        <ContactForm />
         <section className="mt-5 flex flex-col justify-center items-center">
           <p className="font-bold text-maingrey">Keep In Touch</p>
           <p className="font-bold text-lg text-maingrey mt-4">
