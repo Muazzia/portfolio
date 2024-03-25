@@ -1,8 +1,12 @@
 import emailjs from "@emailjs/browser";
 import React, { useEffect, useState } from "react";
 
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 const ContactForm: React.FC = () => {
   useEffect(() => emailjs.init("Y-5jNsscllwNC4mmg"), []);
+  const [loading, setLoading] = useState(false);
 
   const [formData, setFormData] = useState({
     email: "",
@@ -22,9 +26,7 @@ const ContactForm: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // You can handle form submission here
-
-    console.log(formData);
+    setLoading(true);
     emailjs
       .send("service_e3cdzuj", "template_e71bqso", {
         to_name: formData.name,
@@ -32,7 +34,9 @@ const ContactForm: React.FC = () => {
         message: formData.message,
       })
       .then(() => {
-        console.log("succ");
+        toast.success("Email Sent Successfully", {
+          autoClose: 1500,
+        });
         setFormData({
           email: "",
           message: "",
@@ -40,13 +44,19 @@ const ContactForm: React.FC = () => {
         });
       })
       .catch((err: any) => {
+        toast.error("Couldn't Sent Email try again", {
+          autoClose: 1500,
+        });
         console.log("er", err);
+      })
+      .finally(() => {
+        setLoading(false);
       });
-    // Reset form after submission
   };
 
   return (
     <section className="bg-white">
+      <ToastContainer />
       <div className="py-8 lg:py-16 px-4 max-w-screen-md">
         <form onSubmit={handleSubmit} className="space-y-8">
           <div>
@@ -104,7 +114,10 @@ const ContactForm: React.FC = () => {
           </div>
           <button
             type="submit"
-            className="py-3 px-5 text-sm font-bold text-center text-white rounded-lg bg-maingrey sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-offset-white"
+            disabled={loading}
+            className={`py-3 px-5 text-sm font-bold text-center text-white rounded-lg bg-maingrey sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-offset-white ${
+              loading ? "bg-maingrey/30" : ""
+            }`}
           >
             Send message
           </button>
