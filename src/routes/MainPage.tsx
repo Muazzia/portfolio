@@ -1,6 +1,7 @@
 import BlogsPage from "@/components/BlogsPage";
 import ContactForm from "@/components/ContactForm";
 import LandingPage from "@/components/LandingPage";
+import Payment from "@/components/Payment";
 import ResumeBox from "@/components/ResumeBox";
 import SkillsPage from "@/components/SkillsPage";
 import WorkPage from "@/components/WorkPage";

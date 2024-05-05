@@ -2,6 +2,7 @@ import gamehub from "../assets/gamehub.png";
 import bank from "../assets/bank.png";
 import sounddesign from "../assets/sounddesign.png";
 import social from "../assets/social.png";
+import Payment from "./Payment";
 
 const WorkPage = () => {
   const data = [
@@ -26,6 +27,9 @@ const WorkPage = () => {
             </a>
           );
         })}
+      </div>
+      <div className="mt-10">
+        <Payment />
       </div>
     </section>
   );
